@@ -6,8 +6,8 @@ file(GLOB_RECURSE CORE_LIB_SOURCES
     "${CMAKE_CURRENT_LIST_DIR}/source/*.cpp"
 )
 
-add_library(coreLib STATIC ${CORE_LIB_SOURCES})
+add_library(coreLibB STATIC ${CORE_LIB_SOURCES})
 
-target_include_directories(coreLib PUBLIC "${CMAKE_CURRENT_LIST_DIR}/include")
+target_include_directories(coreLibB PUBLIC "${CMAKE_CURRENT_LIST_DIR}/include")
 
-target_link_libraries(coreLib PUBLIC utilityLib)
+target_link_libraries(coreLibB PUBLIC utilityLibB)

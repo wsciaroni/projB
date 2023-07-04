@@ -1,2 +1,2 @@
 
-add_executable(main "${CMAKE_CURRENT_LIST_DIR}/main.cpp")
+add_executable(mainB "${CMAKE_CURRENT_LIST_DIR}/main.cpp")
