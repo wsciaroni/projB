@@ -21,3 +21,15 @@ add_subdirectory ("${CMAKE_CURRENT_LIST_DIR}/libraries")
 add_subdirectory ("${CMAKE_CURRENT_LIST_DIR}/applications")
 
 add_subdirectory ("${CMAKE_CURRENT_LIST_DIR}/tests")
+
+set(projb_POPULATED ON)
+set(projb_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+set(projb_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
+FetchContent_SetPopulated(
+    ProjB
+    SOURCE_DIR ${projb_SOURCE_DIR}
+    BINARY_DIR ${projb_BINARY_DIR}
+)
+
+include (cmake/IncludeProjA.cmake)
+include_proj_a()
