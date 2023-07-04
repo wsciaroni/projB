@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.25)
 
-project ("CXX_PROJECT_TEMPLATE")
+project (ProjB)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 17)
