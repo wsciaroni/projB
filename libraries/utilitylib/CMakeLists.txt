@@ -1,5 +1,10 @@
 # Utility Library
 
+configure_file(
+    ${CMAKE_CURRENT_LIST_DIR}/include/BVersion.h.in
+    ${CMAKE_CURRENT_LIST_DIR}/include/BVersion.h
+)
+
 file(GLOB_RECURSE UTILITY_LIB_SOURCES
     "${CMAKE_CURRENT_LIST_DIR}/include/*.h"
     "${CMAKE_CURRENT_LIST_DIR}/include/*.hpp"
